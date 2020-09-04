@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Personal Document</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="srushti.css">
+        
+</head>
+<body background="bg.jpg">
+    <header>
+        <img src="logo1.png" width="400px" height="50px">
+</header>
+<div style="float:right">
+     
+<ul class="navi" >
+        <li class="kavi"><a  href="homePage.jsp"><b style="font-size: 15px;" >HOME</b></a></li>
+        <li class="kavi"><a href="#news"><b style="font-size: 15px;" >ABOUT US</b></a></li>
+       
+        <li class="kavi"><a href="#news"><b style="font-size: 15px;" >GALLARY</b></a></li>
+
+        <li class="kavi"><a href="#contact"><b style="font-size: 15px;" >CONTACT US</b></a></li>
+        <li class="kavi"><a href="#contact"><b style="font-size: 15px;" >LOGOUT</b></a></li>
+</ul>
+   
+ </div>
+ <div class="container-fluid">
+    
+    
+    <div id="head" class="row">
+    <div class="col-xs-6">
+    <div style="float:left">
+
+ </div>
+ </div>
+    <div class="col-xs-6"></div>
+    </div>
+    
+    <br>
+    
+    
+    <div id="info">
+    
+    
+    <div id="sru" style="margin-left: 250px;margin-top: 40px; width:900px" >
+	<h1>Fill out your information</h1>
+        <hr>
+	<form enctype="multipart/form-data" action="SubmitInfoJava" method="post">
+            Profile Picture<br><input type="file" name="propic" style="height:30px;width:400px;" required><br>
+                <input type="text" name="name" placeholder="Full Name" required style="height:30px;width:400px;" required>&nbsp&nbsp&nbsp&nbsp
+                <input type="hidden" name="email"  style="height:30px;width:400px;"><br>
+		<input type="text" name="flat" required placeholder="Building Name/Flat No" style="height:30px;width:400px;" required>&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="address1" required placeholder="Address Line 1" style="height:30px;width:400px;" required><br>
+		<input type="text" name="state" placeholder="State" required style="height:30px;width:400px;" required>&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="district" placeholder="District" required style="height:30px;width:400px;" required><br>
+		<input type="text" name="city" placeholder="City" required style="height:30px;width:400px;" required>&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="pincode" placeholder="Pincode" style="height:30px;width:400px;" required><br>
+                <input type="submit" name="submitinfo" style="width:700px;margin-left: 70px;background-color: #ff0000">
+	</form>
+        <a href="homePage.html"><button style="background-color:#3A5FC1;border: none;color: white;width:700px;padding: 5px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;cursor: pointer;border-radius:5px;margin-left:70px">Go Back</button></a>
+
+    </div>
+    
+</body>
+</html>

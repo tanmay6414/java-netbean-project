@@ -1,0 +1,238 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color:#F5F5F5;
+    padding: 1px;
+    text-align: left;
+    font-size:13px;
+    color:#666;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    margin-top: 5px;
+    float: left;
+    width: 15%;
+    height: 590px; /* only for demonstration, should be removed */
+    background: #547FF3;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    margin-top: 5px;
+    margin-left:0;
+    margin-right:0;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    background-color:#F5F5F5;
+    height: auto; /* only for demonstration, should be removed */
+    margin-bottom: 5px;
+    background-image: url();
+    background-position: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+/* Style the footer */
+footer {
+    background-color: #3A5FC1;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size:10px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+.side{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  padding:0;
+}
+
+.scroll-area{
+  width:100%;
+  height:calc(100% - 200px);
+  margin-top:100px;
+  background-color:#fff  ;
+  float:left;
+  overflow-y:scroll;
+}
+ul.navi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#3A5FC1;
+}
+
+li.kavi {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #CA175C;
+}
+
+.active {
+    background-color:red;
+}
+.cities {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    margin-left:0;
+    margin-right:0;  
+    padding: auto;
+    
+}
+.slide-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+#head{
+      background-color:#547FF3;
+      color: white;
+    }
+
+  
+
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #3A5FC1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#sru {
+  border-radius: 5px;
+  background-color: #C8D5F7;
+  color:white;
+  padding: 20px;
+  width: 600px; 
+  margin:  0px auto;
+}
+.button {
+  background-color:#3A5FC1;
+  border: none;
+  color: white;
+  width:100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+} 
